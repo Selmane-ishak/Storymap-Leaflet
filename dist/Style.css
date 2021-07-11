@@ -200,3 +200,50 @@
             width: 100%;
             /* vertical-align: baseline; */
         }
+ @media screen and (max-width: 600px) {
+           
+            .content {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding-right: 15px;
+            }
+
+            .map {
+                position: absolute;
+                right: 0;       
+                width: 100%;
+                height: 50%;
+                
+            }
+            .title{
+                position: absolute;       
+                width: 100%;
+                height: 40px;
+                bottom: 0;
+                background-color: #ff7373;
+                margin: 0px;
+                padding: 0px;
+                padding-left: 20px;
+            }
+            .grid-container {
+                background-color: #ffffffea;
+                border: 0px solid #ff7373b6;
+                padding: 2px;
+                /*  width: 350px; */
+                position: absolute;
+                top: 50%;
+                right: 0;
+                bottom: 40px;
+                width: 100%;
+                height: calc(50% - 40px);
+                z-index: 1000;
+                padding-top: 40px;
+                padding-right: 40px;
+                padding-bottom: 40px;
+                padding-left: 40px;
+            }
+        
+          
+          }
