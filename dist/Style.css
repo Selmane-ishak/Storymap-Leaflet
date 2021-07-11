@@ -1,0 +1,202 @@
+
+        body {
+            color: #404040;
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+    
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    
+        .map {
+            position: absolute;
+            right: 0;       
+            width: 100%;
+            height: calc(100%-40px);
+            top: 0;
+            bottom: 40px;
+        }
+        .title{
+            position: absolute;       
+            width: 100%;
+            height: 40px;
+            bottom: 0;
+            background-color: #ff7373;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 20px;
+            
+           
+
+        }
+
+        .title h1{
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0;
+            line-height: 40px;       
+            color: rgb(255, 255, 255);
+        }
+
+        .leaflet-bar a {
+            background-color: #ff7373;
+            color: rgb(255, 255, 255);
+            border: none;
+            margin-top: 5px;
+            
+        }
+
+        .leaflet-touch .leaflet-bar a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+       
+
+        .leaflet-touch .leaflet-bar {
+            border: none;
+            
+            }
+        
+        .leaflet-bar a:hover {
+            background-color: #ff7373c7;
+            color: rgb(255, 255, 255);
+        }
+        .leaflet-touch .leaflet-bar a:first-child {
+            border-radius: 50%;
+            
+        }
+        .leaflet-touch .leaflet-bar a:last-child {
+            border-radius: 50%;
+        }
+    
+        ::-webkit-scrollbar {
+            width: 3px;
+            height: 3px;
+            border-left: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: none;
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: #ff7373;
+            border-radius: 0;
+        }
+    
+        .grid-container {
+            background-color: #ffffffea;
+            border: 10px solid #ff7373b6;
+            padding: 2px;
+            /*  width: 350px; */
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+    
+            padding-top: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            padding-left: 40px;
+        }
+    
+        .grid-container {
+            /* background-color: rgb(161, 161, 161); */
+            text-align: center;
+            /*  padding: 20px 0; */
+            font-size: 30px;
+            height: auto;
+            /*  line-height: 40px; */
+        }
+        .number{
+            font-size: 15px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            /*  transform: translateY(-50%); */
+            /* cursor: pointer; */
+            color: rgb(0, 0, 0);
+            color: #404040;
+            
+
+        }
+     
+        .prev,
+        .next {
+            position: absolute;
+            bottom: 20px;
+            /*  transform: translateY(-50%); */
+            cursor: pointer;
+            color: #ff7373 ;;
+            width: 20px;
+            height: 20px;
+
+            /*  transition: all 0.3s; */
+        }
+    
+        .prev:hover,
+        .next:hover {
+            opacity: 0.8;
+        }
+    
+        .prev {
+            left: 20px;
+        }
+    
+        .next {
+            left: 50px;
+        }
+    
+        .content {
+            width: 350px;
+            height: 450px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 15px;
+        }
+      
+    
+        #dsiplayer {
+            font-size: 2rem;
+            /* height: 400px; */
+        }
+    
+        .slide {
+            height: 336px;
+        }
+    
+    
+    
+        #slides_container .slide {
+            display: none;
+            overflow-y: auto;
+            padding-right: 20px;
+        }
+    
+    
+        .slide h1 {
+            font-size: 1.2em;
+            line-height: 1.2em;
+    
+        }
+    
+        .slide p {
+            font-size: 13px;
+    
+        }
+    
+        .slide img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            /* vertical-align: baseline; */
+        }

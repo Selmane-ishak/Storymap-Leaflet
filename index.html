@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stoymap-Leaflet</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="dist/Style.css" />
+
+
+</head>
+
+<body>
+    <div id="map" class="map">
+    </div>
+    <div id="title" class="title"><h1>Lacs en Algérie</h1></div>
+    <div class="grid-container">
+        <div class="content">
+            <div id="dsiplayer"></div>
+        </div>
+        <div class="number" id="number"></div>
+        <div class="prev" id="prev"><i class="fas fa-chevron-circle-left"></i></div>
+        <div class="next" id="next"><i class="fas fa-chevron-circle-right"></i></div>
+    </div>
+   
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="config.js"></script>
+    <script src="dist/main.js"></script>
+    
+</body>
+
+</html>
