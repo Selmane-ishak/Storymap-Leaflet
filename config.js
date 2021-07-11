@@ -1,5 +1,6 @@
 /* configuration default view*/
 var init = {
+    title:"Lacs en Algérie",
     coordinate: [29.56282445, 3.12480569],
     zoom: 5,
     basemap:'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
