@@ -14,7 +14,7 @@ To modify the slides it is necessary to update the Configuration file (config.js
 # configuration:
 
 for example:
-
+```
 var storysSliderContent = [
     {
         id: "1",
@@ -24,4 +24,5 @@ var storysSliderContent = [
         coordinate: [latitude, longitude],
         zoom: zoom required to view your area,
     }
+```
 
