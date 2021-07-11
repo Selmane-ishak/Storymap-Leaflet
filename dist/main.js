@@ -27,6 +27,7 @@ var osm = new L.tileLayer(init.basemap, {
 
 var displayer = document.getElementById('displayer');
 var PageNumber = document.getElementById('number');
+var appTitle = document.getElementById('title');
 dsiplayer.innerHTML =`
 <div class="slide selected selected_slide" style="height: 336px;">
     <h1>Commencer le diaporama</h1>
@@ -35,6 +36,7 @@ dsiplayer.innerHTML =`
 </div>    
 `;
 PageNumber.textContent = "Diapo N° : "+(0)+'/'+storysSliderContent.length;
+appTitle.textContent = init.title;
 /* dsiplayedSlide(0); */
 
 var $i = -1;
