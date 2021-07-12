@@ -78,5 +78,7 @@ function dsiplayedSlide(e) {
 
     console.log((e+1)+'/'+storysSliderContent.length);
     PageNumber.textContent = "Diapo N° : "+(e+1)+'/'+storysSliderContent.length;
+    
+    document.getElementById('content').scrollTop = 0;
 
 }
