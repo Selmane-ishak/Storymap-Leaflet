@@ -11,7 +11,7 @@ To modify the slides it is necessary to update the Configuration file (config.js
 
 ![image](https://user-images.githubusercontent.com/73941369/125209239-69e8d780-e28f-11eb-80e5-86b57076bf87.png)
 
-# configuration:
+# Configuration:
 
 All the configuration is done in the config.js file.
 
@@ -36,7 +36,7 @@ var storysSliderContent = [
     },
     
 ```
-# theme:
+# Theme:
 
 To customize the color of the theme change the var (--theme) in the style.css file.
 
