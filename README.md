@@ -13,6 +13,8 @@ To modify the slides it is necessary to update the Configuration file (config.js
 
 # configuration:
 
+All the configuration is done in the config.js file.
+
 for example:
 ```
 var storysSliderContent = [
@@ -23,6 +25,18 @@ var storysSliderContent = [
         description: "Add description for this slide.",
         coordinate: [latitude, longitude],
         zoom: zoom required to view your area,
-    }
+    },
+    {
+        id: "2",
+        title: 'Add title of this slide2',
+        imageUrl: "https://........",
+        description: "Add description for this slide2.",
+        coordinate: [latitude, longitude],
+        zoom: zoom required to view your area,
+    },
+    
 ```
+# theme:
+
+To customize the color of the theme change the var (--theme) in the style.css file.
 
