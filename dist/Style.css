@@ -1,10 +1,19 @@
 
-        body {
+      
+        
+        /*change the theme color*/
+        :root {
+            --theme: #194b02; /* default color : #ff7373;*/
+          }
+        
+
+        body,html {
             color: #404040;
             font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
+            height: 100%;
         }
     
         * {
@@ -26,13 +35,10 @@
             width: 100%;
             height: 40px;
             bottom: 0;
-            background-color: #ff7373;
+            background-color: var(--theme);
             margin: 0px;
             padding: 0px;
             padding-left: 20px;
-            
-           
-
         }
 
         .title h1{
@@ -44,8 +50,10 @@
             color: rgb(255, 255, 255);
         }
 
+        
+
         .leaflet-bar a {
-            background-color: #ff7373;
+            background-color: var(--theme);
             color: rgb(255, 255, 255);
             border: none;
             margin-top: 5px;
@@ -88,13 +96,13 @@
         }
     
         ::-webkit-scrollbar-thumb {
-            background: #ff7373;
+            background: var(--theme);
             border-radius: 0;
         }
     
         .grid-container {
             background-color: #ffffffea;
-            border: 10px solid #ff7373b6;
+            /* border: 10px solid #ff7373b6; */
             padding: 2px;
             /*  width: 350px; */
             position: absolute;
@@ -135,7 +143,7 @@
             bottom: 20px;
             /*  transform: translateY(-50%); */
             cursor: pointer;
-            color: #ff7373 ;;
+            color: var(--theme) ;;
             width: 20px;
             height: 20px;
 
@@ -200,7 +208,12 @@
             width: 100%;
             /* vertical-align: baseline; */
         }
- @media screen and (max-width: 600px) {
+
+        .slide img[src=""] {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
            
             .content {
                 width: 100%;
@@ -222,14 +235,13 @@
                 width: 100%;
                 height: 40px;
                 bottom: 0;
-                background-color: #ff7373;
+                
                 margin: 0px;
                 padding: 0px;
                 padding-left: 20px;
             }
             .grid-container {
-                background-color: #ffffffea;
-                border: 0px solid #ff7373b6;
+                
                 padding: 2px;
                 /*  width: 350px; */
                 position: absolute;
@@ -238,7 +250,7 @@
                 bottom: 40px;
                 width: 100%;
                 height: calc(50% - 40px);
-                z-index: 1000;
+                z-index: 1000;              
                 padding-top: 40px;
                 padding-right: 40px;
                 padding-bottom: 40px;
